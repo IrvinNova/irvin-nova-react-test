@@ -91,10 +91,10 @@ export default function RickMorty() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-900 via-indigo-900 to-purple-900 text-white p-8 flex flex-col items-center justify-center">
             <h1 className="text-4xl font-bold text-center mb-10 tracking-wider animate-pulse">
-                ⚛️ Rick and Morty Universe
+                Rick and Morty Universe
             </h1>
 
-            {/* 🔄 SPINNER de carga */}
+            {/* SPINNER de carga */}
             {loading ? (
                 <div className="flex flex-col items-center justify-center mt-20">
                     <div className="w-16 h-16 border-4 border-indigo-400 border-t-transparent rounded-full animate-spin mb-4"></div>
@@ -102,7 +102,7 @@ export default function RickMorty() {
                 </div>
             ) : (
                 <>
-                    {/* 🌌 Tabla con efecto de aparición */}
+                    {/* Tabla con efecto de aparición */}
                     <div
                         className="overflow-x-auto w-full max-w-6xl opacity-0 animate-fadeInUp shadow-2xl rounded-2xl"
                         style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}
@@ -158,7 +158,7 @@ export default function RickMorty() {
     );
 }
 
-/* ✨ Animaciones personalizadas con Tailwind */
+/*Animaciones personalizadas con Tailwind */
 const styles = `
 @keyframes fadeIn {
   from { opacity: 0; filter: blur(6px); }

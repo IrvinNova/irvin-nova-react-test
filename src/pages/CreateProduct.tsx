@@ -58,9 +58,9 @@ export default function CreateProduct() {
             setSuccess(`Producto creado con ID: ${res.data.id}`);
             reset();
 
-            // ⏱️ Espera 1 segundo para mostrar el mensaje y redirige
+            // Espera 1 segundo para mostrar el mensaje y redirige
             setTimeout(() => {
-                navigate("/products"); // 👈 Redirige a la vista de productos
+                navigate("/products");
             }, 1500);
         } catch (error) {
             console.error(error);

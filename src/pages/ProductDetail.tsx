@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { fetchProductById } from "../api/fakeStoreApi";
-import AnimatedPage from "../components/AnimatedPage";
 
 interface Product {
     id: number;
