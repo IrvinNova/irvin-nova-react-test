@@ -1,46 +1,95 @@
-# Getting Started with Create React App
+# Irvin Nova React Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-19.2.0-blue?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-blue?logo=typescript)
+![Node.js](https://img.shields.io/badge/Node.js-18.17.1-green?logo=node.js)
+![npm](https://img.shields.io/badge/npm-9.8.1-red?logo=npm)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.18-blue?logo=tailwind-css)
 
-## Available Scripts
+Proyecto de ejemplo en **React + TypeScript**, usando React Router, TailwindCSS y Zustand.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Vista previa
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Vista previa del proyecto](./screenshot.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+> Coloca una captura de tu proyecto en `screenshot.png` en la raíz del repositorio.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Requisitos
 
-### `npm run build`
+- **Node.js**: v18.17.1 (recomendado)
+- **npm**: 9.8.1 (recomendado)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instalación
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clonar el repositorio e instalar dependencias:
 
-### `npm run eject`
+```bash
+git clone <URL_DEL_REPOSITORIO>
+cd irvin-nova-react-test
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Scripts disponibles
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+| Comando         | Descripción                                                 |
+| --------------- | ----------------------------------------------------------- |
+| `npm start`     | Inicia el servidor de desarrollo en `http://localhost:3000` |
+| `npm run build` | Genera un build de producción en la carpeta `build/`        |
+| `npm test`      | Ejecuta los tests del proyecto                              |
+| `npm run eject` | Ejecta la configuración de `react-scripts` (no reversible)  |
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## Login de prueba
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para acceder a las rutas privadas del proyecto:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Puedes usar **cualquier correo válido** (ej: `usuario@ejemplo.com`)
+- Contraseña de prueba: `123456`
+
+> Esto es solo para fines de demostración. Las rutas privadas no funcionarán si no se introduce un correo válido.
+
+---
+
+## Build para producción
+
+```bash
+npm run build
+```
+
+El contenido listo para producción se genera en la carpeta `build/`.
+
+---
+
+## Tecnologías principales
+
+- React 19 + TypeScript
+- TailwindCSS 3
+- Zustand (State Management)
+- React Router v7
+- Axios para llamadas HTTP
+- Yup + React Hook Form para validaciones de formularios
+
+---
+
+## Aprendiendo sobre el proyecto
+
+Este proyecto fue creado con [Create React App](https://github.com/facebook/create-react-app).
+
+- Aprende más en la [documentación oficial de CRA](https://facebook.github.io/create-react-app/docs/getting-started)
+- Aprende más sobre React en la [documentación oficial de React](https://reactjs.org/)
+
+---
+
+## Notas
+
+- Este proyecto utiliza **HashRouter**, por lo que las rutas incluyen `#` en la URL.
+- Se recomienda usar las versiones de Node y npm indicadas para evitar problemas de compatibilidad.
